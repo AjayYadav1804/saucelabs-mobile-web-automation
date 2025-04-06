@@ -75,7 +75,7 @@ saucelabs-mobile-web/
    - Order confirmation
    - Return to home screen
 
-#Tests Automated
+## Tests Automated
 The following end-to-end workflow has been automated:
 #End-to-End Workflow Test
 1. Launch mobile browser (Chrome, Firefox, or Edge)
@@ -160,6 +160,13 @@ mvn test -Dtest=EndToEndWorkflowTest
 - Execution summary
 - Configured recipients
 - Customizable email templates
+
+Here is the Extent report overview:
+![Image](https://github.com/user-attachments/assets/3c5bc0ef-e83f-4ce2-98a1-147fd825b414)
+![Image](https://github.com/user-attachments/assets/447e58de-52ff-40ce-a82c-ecee917060f2)
+
+## Automation Video Output:
+https://github.com/user-attachments/assets/00daeb04-d300-47ab-b306-9af77fcc71aa
 
 ## 📝 Logging
 - Framework: Log4j2
