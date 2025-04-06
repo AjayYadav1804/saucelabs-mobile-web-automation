@@ -20,40 +20,39 @@ A hybrid mobile web automation framework for testing Sauce Labs demo application
 - Edge
 
 ## 📁 Project Structure
-
+```
 saucelabs-mobile-web/
 ├── src/
-│   ├── main/
-│   │   └── java/
-│   │       ├── com.saucedemo.pageobjects/
+│   ├── main/java/
+│   │   └── com.saucedemo/
+│   │       ├── pageobjects/
 │   │       │   ├── Actions.java
 │   │       │   ├── CartPage.java
 │   │       │   ├── CheckoutPage.java
 │   │       │   ├── InventoryPage.java
 │   │       │   ├── LoginPage.java
 │   │       │   └── LogoutPage.java
-│   │       └── com.saucedemo.utils/
+│   │       └── utils/
 │   │           ├── EmailSender.java
 │   │           ├── ExcelUtils.java
 │   │           ├── ExtentReportManager.java
 │   │           ├── LoggingUtils.java
 │   │           └── ScreenshotUtils.java
-│   └── test/
-│       └── java/
-│           ├── com.saucedemo.listeners/
+│   └── test/java/
+│       └── com.saucedemo/
+│           ├── listeners/
 │           │   └── TestListener.java
-│           └── com.saucedemo.tests/
+│           └── tests/
 │               ├── BaseTest.java
 │               └── EndToEndWorkflowTest.java
-├── libs/
-│   ├── chromedriver.exe
-│   ├── geckodriver.exe
-│   └── msedgedriver.exe
+├── resources/
+│   ├── config.properties
+│   ├── log4j2.xml
+│   └── org.mozilla.firefox_133.0.3.apk
 ├── reports/
-│   ├── screenshots/
-│   └── testReport.html
-├── pom.xml
-└── SaubeLabbsMobileWebE2ETest.xml
+├── test-output/
+└── SaubeLabsMobileWebE2E.xml
+```
 
 ## 🧪 Test Scenarios
 
@@ -75,8 +74,7 @@ saucelabs-mobile-web/
 5. Post-Order Validation
    - Order confirmation
    - Return to home screen
-   
-   
+
 #Tests Automated
 The following end-to-end workflow has been automated:
 #End-to-End Workflow Test
@@ -95,16 +93,6 @@ The following end-to-end workflow has been automated:
 13. Place order
 14. Click on "Continue Shopping"
 15. Verify redirection to Home screen
-   
-### Features
-
-Cross-browser testing on mobile devices
-Page Object Model design pattern
-Data-driven testing with Excel integration
-Detailed HTML test reports
-Automatic email notifications with test results
-Screenshot capture on test failures
-TestNG listeners for enhanced test execution flow
 
 ## ⚙️ Setup Requirements
 
@@ -206,6 +194,4 @@ Solution: Verify Appium server status and configuration
 - Regular code cleanup
 - Proper exception handling
 - Comprehensive logging
-
-
 
